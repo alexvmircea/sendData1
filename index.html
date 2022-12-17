@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Test Data Push</title>
+    <link rel="stylesheet" href="assets/styles/app.css" />
+    <script src="assets/scripts/app.js" defer></script>
+  </head>
+  <body>
+    <template id="data">
+      <li class="data-item">
+        <h2></h2>
+        <p></p>
+      </li>
+    </template>
+    <section id="new-item">
+      <form>
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input type="text" id="email" />
+        </div>
+        <div class="form-control">
+          <label for="dodid">DODID</label>
+          <input type="number" id="dodid" min="1000000000" max="1999999999" step="1" />
+        </div>
+        <div class="form-control">
+          <label for="command">Command</label> 
+          <select id="command">
+            <option>HQDA</option>
+            <option>NETCOM</option>
+            <option>Dev Group</option>
+          </select>
+        </div>
+        <div class="form-control">
+          <label for="manufacturer">Manufacturer</label>
+          <select id="manufacturer">
+            <option>Apple</option>
+            <option>Android</option>
+            <option>Google</option>
+          </select>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>
